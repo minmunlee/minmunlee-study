@@ -44,16 +44,16 @@
 
 <br>
 
+### SLF4J의 핵심 구성 요소
+
 ### Bridge
 
 > SLF4J와 다른 로깅 프레임워크 간의 연결<br>
 
-SLF4J가 자체적으로 로깅을 처리하지 않고, 
+SLF4J가 자체적으로 로깅을 처리하지 않고,
 다른 로깅 시스템으로의 연결(redirect)을 위한 다리 역할을 하는 Bridge를 제공한다.
 
 <br>
-
-### SLF4J의 핵심 구성 요소
 
 ### SLF4J-API
 
@@ -75,29 +75,29 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class LogTest {
-    private static final Logger logger = LogManager.getLogger(LogTest.class);
+   private static final Logger logger = LogManager.getLogger(LogTest.class);
 
-    public void LogTest() {
+   public void LogTest() {
 
-        //TRACE 레벨의 로그 기록
-        logger.trace("TRACE 레벨의 로그입니다.");
+      //TRACE 레벨의 로그 기록
+      logger.trace("TRACE 레벨의 로그입니다.");
 
-        //DEBUG 레벨의 로그 기록
-        logger.debug("DEBUG 레벨의 로그입니다.");
+      //DEBUG 레벨의 로그 기록
+      logger.debug("DEBUG 레벨의 로그입니다.");
 
-        //INFO 레벨의 로그 기록
-        logger.info("INFO 레벨의 로그입니다.");
+      //INFO 레벨의 로그 기록
+      logger.info("INFO 레벨의 로그입니다.");
 
-        //WARN 레벨의 로그 기록
-        logger.warn("WARN 레벨의 로그입니다.");
+      //WARN 레벨의 로그 기록
+      logger.warn("WARN 레벨의 로그입니다.");
 
-        //ERROR 레벨의 로그 기록
-        logger.error("ERROR 레벨의 로그입니다.");
+      //ERROR 레벨의 로그 기록
+      logger.error("ERROR 레벨의 로그입니다.");
 
-        //FATAL 레벨의 로그 기록
-        logger.fatal("FATAL 레벨의 로그입니다.");
+      //FATAL 레벨의 로그 기록
+      logger.fatal("FATAL 레벨의 로그입니다.");
 
-    }
+   }
 }
 ```
 
@@ -124,7 +124,7 @@ SLF4J-API를 구현한 클래스에서 Binding으로 연결될 로깅 시스템�
 
 > 로깅 시스템을 변경하거나 업그레이드할 때 발생할 수 있는 번거로움, 불필요한 동작을 줄일 수 있다.<br>
 
-즉, SLF4J를 사용함으로써 로깅 시스템에 대한 의존성을 낮추고, 애플리케이션의 로깅 코드를 로깅 시스템과 분리함으로써 
+즉, SLF4J를 사용함으로써 로깅 시스템에 대한 의존성을 낮추고, 애플리케이션의 로깅 코드를 로깅 시스템과 분리함으로써
 나중에 로깅 시스템을 변경할 때 생기는 번거로움을 최소화할 수 있다.<br>
 그리고 다양한 로깅 시스템에서 SLF4J의 인터페이스를 구현한 Binding을 통해 쉽게 전환할 수 있다.
 
