@@ -44,7 +44,7 @@
 
 <br>
 
-### 토큰 기반 인증 (Token-Based AUthentication)
+### 토큰 기반 인증 (Token-Based Authentication)
 > 보다 안전하고 확장성 있는 인증 방식으로, 서버에서 토큰을 발급하여 클라이언트가 이를 전달하고 이를 통해 인증을 수행하는 방식.
 
 #### 장점
